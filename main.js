@@ -1,5 +1,21 @@
 
+
 const body = document.querySelector("body")
+let nombreJugador=[]
+
+const nombreJuego = document.createElement("h1")
+nombreJuego.innerHTML= "Piedra ✊🏻 - Papel 🖐🏻 - Tijeras ✌🏻"  
+body.appendChild(nombreJuego)
+
+const login = document.createElement("input")
+login.placeholder= "Ingresa tu nombre:"  
+body.appendChild(login)
+
+const jugar = document.createElement("button")
+jugar.innerHTML="Jugar"
+jugar.addEventListener("click", function(){
+    nombreJugador.push(login.value)
+    console.log(nombreJugador)  
 
 const container = document.createElement("div")
 body.appendChild(container)
@@ -80,7 +96,7 @@ jugador1=[]
 
 if (marcador=="Ganaste"){
     const puntaje = document.createElement("p")
-    puntaje.innerHTML=`jugador 1: 1 punto`
+    puntaje.innerHTML=`${nombreJugador}: 1 punto`
     puntaje.classList.add("puntaje")
     body.appendChild(puntaje)
 
@@ -94,5 +110,5 @@ if (marcador=="Ganaste"){
 
 }
 
-
-
+})
+body.appendChild(jugar)
