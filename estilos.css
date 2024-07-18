@@ -15,14 +15,58 @@ input{
     margin-top: 15%;
     margin-left: 30%;
     width: 35%;
-    display: block;
     border-radius: 10px;
 }
 
-button{
+.jugar{
     margin-left: 43%;
     margin-top: 10px;
     font-size: 45px;
     border-radius: 40px;
     box-shadow: 4px 5px 10px  white;
+}
+
+.loguear{
+    position: fixed;
+    display: inline-block;
+    width: 100%;
+}
+
+.contenedor{
+    z-index:1;  
+    position: absolute ;
+    background-color: black;
+} 
+
+.piedra{
+    width: 320px;
+    height: 260px;
+    border-radius: 30px;
+    background-position: center;
+    box-shadow: 0px 0px 10px  white;
+    margin-left: 30px;
+}
+.papeles{
+    width: 320px;
+    height: 260px;
+    border-radius: 30px;
+    background-position: center;
+    box-shadow: 0px 0px 10px  white;
+    margin-left: 30px;
+}
+.tijera{
+    width: 310px;
+    height: 260px;
+    border-radius: 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: white;
+    box-shadow: 0px 0px 10px  white;
+    margin-left: 30px;
+}
+
+.puntaje{
+    text-align: end ;
+    font-size: 30px;
+    text-transform: capitalize;
 }
