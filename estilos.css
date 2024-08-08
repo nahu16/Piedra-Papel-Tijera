@@ -46,6 +46,7 @@ input{
     width: 320px;
     height: 260px;
     border-radius: 30px;
+    background-image: url("../Imagen/Piedra.jpg");
     background-position: center;
     box-shadow: 0px 0px 10px  white;
     margin-left: 30px;

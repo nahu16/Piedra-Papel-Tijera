@@ -35,7 +35,7 @@ jugar.addEventListener("click", function () {
     container.appendChild(titulo);
 
     const piedra = document.createElement("button");
-    piedra.style.backgroundImage = 'url("../Imagen/Piedra.jpg")';
+    //piedra.style.backgroundImage = 'url("../Imagen/Piedra.jpg")';
     piedra.classList.add("piedra");
     piedra.addEventListener("click", function () {
         jugador1.push("PIEDRA");
@@ -77,7 +77,7 @@ jugar.addEventListener("click", function () {
     
         const duelo = document.createElement("div");
         duelo.classList.add("duelo")
-        duelo.innerHTML = Swal.fire(`El oponente eligió ${oponente} <br> ${nombreJugador} eligió ${jugador1}`);
+        duelo.consolelog= Swal.fire(`El oponente eligió ${oponente} <br> ${nombreJugador} eligió ${jugador1}`);
         container.appendChild(duelo);
 
         let marcador = "";
